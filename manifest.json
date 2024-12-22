@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Selected Texts",
+  "version": "1.0",
+  "description": "Save and copy selected text to the clipboard.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "clipboardWrite",
+    "contextMenus"
+  ],
+  "commands": {
+    "copy-selected-text": {
+      "suggested_key": {
+        "default": "Ctrl+C"
+      },
+      "description": "Copy the selected text to the clipboard"
+    }
+  },
+  "action": {
+    "default_popup": "sam.html",
+    "default_icon": {
+      "16": "sam.png",
+      "48": "sam.png",
+      "128": "sam.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

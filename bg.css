@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    width: 300px;
+    height: 400px;
+}
+
+/* Popup container styling */
+#popup-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Logo container styling */
+#logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#popup-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+#logo-container h1 {
+    font-size: 18px;
+    color: #444;
+    margin: 0;
+}
+
+/* Copied items container */
+#copied-items-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#copied-items-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#copied-items-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#copied-items-list li:hover {
+    background-color: #d6d8db;
+}
+
+/* Footer styling */
+#footer {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#clear-copied-items {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#clear-copied-items:hover {
+    background-color: #0056b3;
+}
